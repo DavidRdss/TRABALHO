@@ -1,0 +1,283 @@
+/* ==================== CONFIGURAÇÃO BASE ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ==================== BARRA DO TOPO (HEADER) ==================== */
+.main-header {
+    background-color: #eef5fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #d1e3f0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #004587;
+    margin-right: 40px;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+}
+
+.logo-orange {
+    color: #f39200;
+    margin-right: 5px;
+    transform: rotate(30deg);
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    max-width: 700px;
+}
+
+/* Customização do ícone de lupa puxado do link */
+.search-icon {
+    color: #333;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.orange-bar {
+    height: 15px;
+    background-color: #f39200;
+}
+
+/* ==================== BOX DO CARD (MÓDULO CENTRAL) ==================== */
+.page-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    border: 1px solid #b6cedf;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.card-breadcrumb {
+    background-color: #004587;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.card-breadcrumb span {
+    color: #b0cbe3;
+}
+
+.card-breadcrumb span.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    gap: 20px;
+}
+
+/* ==================== ÁREA DA ESQUERDA (IMAGEM/QR) ==================== */
+.column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pi-illustration-wrapper {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f4f7f9 40%, #e0edf7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #a4c2db;
+}
+
+.pi-circle-logo {
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 69, 135, 0.15);
+}
+
+.pi-circle-logo span {
+    font-size: 38px;
+    font-weight: bold;
+    color: #004587;
+    letter-spacing: 1px;
+}
+
+.app-access {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.mock-qr-code {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #999;
+    padding: 3px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.qr-pattern {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #333, #333 4px, #fff 4px, #fff 8px);
+}
+
+/* ==================== ÁREA DA DIREITA (INPUTS / LINKS) ==================== */
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.column-right h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #004587;
+    text-decoration: none;
+}
+
+/* Link estilizado como o grande botão azul de Login */
+.btn-submit-link {
+    display: block;
+    width: 100%;
+    background-color: #004587;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.btn-submit-link:hover {
+    background-color: #003366;
+}
+
+.card-footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.card-footer-text a {
+    color: #004587;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== LINHA DE RODAPÉ ==================== */
+.page-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* AJUSTES DE TELA PARA DISPOSITIVOS MÓVEIS */
+@media (max-width: 768px) {
+    .card-body { grid-template-columns: 1fr; padding: 20px; }
+    .column-left { margin-bottom: 30px; }
+    .app-access { align-self: center; }
+    .column-right { padding-left: 0; }
+}

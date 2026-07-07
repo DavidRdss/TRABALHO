@@ -1,0 +1,318 @@
+/* ==================== CONFIGURAÇÃO PADRÃO ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==================== TOP BAR ACESSIBILIDADE ==================== */
+.top-accessibility {
+    background-color: #d1e3f0;
+    font-size: 11px;
+    padding: 6px 0;
+    border-bottom: 1px solid #b6cedf;
+}
+
+.container-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.top-accessibility a {
+    text-decoration: none;
+    color: #444;
+}
+
+.links-right a {
+    margin-left: 15px;
+}
+
+/* ==================== HEADER PRINCIPAL ==================== */
+.main-header {
+    background-color: #eef5fa;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #004587;
+    margin-right: 40px;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+}
+
+.logo-orange {
+    color: #f39200;
+    margin-right: 5px;
+    transform: rotate(30deg);
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    max-width: 700px;
+}
+
+.search-icon {
+    color: #333;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.orange-bar {
+    height: 15px;
+    background-color: #f39200;
+}
+
+/* ==================== BREADCRUMB ==================== */
+.breadcrumb {
+    background-color: #004587;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: #b0cbe3;
+    text-decoration: none;
+}
+
+/* ==================== GRID DE LAYOUT INTERNO ==================== */
+.main-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: start;
+}
+
+.sidebar-box {
+    background-color: #fff;
+    border: 1px solid #b6cedf;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #eef5fa;
+    font-size: 14px;
+    color: #004587;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+/* Destaque para o item selecionado */
+.menu-list li.active-item {
+    font-weight: bold;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #004587;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-list .arrow {
+    font-size: 11px;
+    color: #004587;
+}
+
+/* QR Code */
+.qrcode-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.mock-qrcode {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #999;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.qr-block {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #333, #333 4px, #fff 4px, #fff 8px);
+}
+
+/* Card Editar Perfil */
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #b6cedf;
+    border-radius: 4px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+    color: #fff;
+}
+
+.btn-edit-profile {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-edit-profile:hover {
+    text-decoration: underline;
+}
+
+/* ==================== BOX DE CONTEÚDO (GRID DE CONTATOS) ==================== */
+.content-section {
+    background-color: #fff;
+    border: 1px solid #b6cedf;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+.content-section h2 {
+    color: #333;
+    font-size: 34px;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* Criação das 3 colunas de contatos conforme o print */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    padding-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.member-avatar {
+    width: 110px;
+    height: 110px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 58px;
+    color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Botão Azul Claro "Contato" */
+.btn-contact {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    background-color: #9cd2ff;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #7bbaff;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 900px) {
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    .sidebar-container {
+        flex-direction: row;
+    }
+    .sidebar-box, .profile-card {
+        flex: 1;
+    }
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+}

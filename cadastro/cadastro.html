@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Cadastro</title>
+    <!-- Link oficial do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Arquivo CSS local -->
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER DO PORTAL ==================== -->
+    <header class="main-header">
+        <div class="header-container">
+
+            <!-- Logo Senac -->
+            <div class="logo-area">
+                <span class="logo-orange">▲</span>
+                <span class="logo-text">Senac</span>
+            </div>
+
+            <!-- Barra de Busca com Ícone Oficial -->
+            <div class="search-bar">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" placeholder="Buscar no portal">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Faixa Laranja Decorativa -->
+    <div class="orange-bar"></div>
+
+
+    <!-- ==================== CONTEÚDO CENTRAL ==================== -->
+    <main class="page-container">
+
+        <div class="login-card">
+
+            <!-- Indicador de Navegação (Breadcrumb corrigido para Cadastro) -->
+            <div class="card-breadcrumb">
+                Você está em: <span>Acesso</span> &gt; <span class="active">Cadastro</span>
+            </div>
+
+            <!-- Corpo Interno do Card -->
+            <div class="card-body">
+
+                <!-- COLUNA ESQUERDA: Ilustração e QR Code -->
+                <div class="column-left">
+                    <div class="pi-illustration-wrapper">
+                        <div class="pi-circle-logo">
+                            <span>PI</span>
+                        </div>
+                    </div>
+
+                    <div class="app-access">
+                        <span>Acesso via App</span>
+                        <div class="mock-qr-code">
+                            <div class="qr-pattern"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUNA DIREITA: Formulário de Cadastro e Links -->
+                <div class="column-right">
+                    <h2>Cadastro</h2>
+
+                    <form class="login-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Email Institucional / CPF" required>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" placeholder="Senha" required>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox"> Lembrar de mim
+                            </label>
+                            <a href="#" class="forgot-password">Esqueci minha senha?</a>
+                        </div>
+
+                        <!-- INTERLIGAÇÃO: Redireciona para a tela do Repositório pós-cadastro -->
+                        <a href="repositorio.html" class="btn-submit-link">Acessar</a>
+                    </form>
+
+                    <!-- INTERLIGAÇÃO: Redireciona para a tela de Login se já tiver conta -->
+                    <div class="card-footer-text">
+                        já tem uma conta? <a href="login.html">clique aqui</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- ==================== RODAPÉ DA PÁGINA ==================== -->
+    <footer class="page-footer">
+        SENAC - Institutório de Projetos Integradores
+    </footer>
+
+</body>
+</html>

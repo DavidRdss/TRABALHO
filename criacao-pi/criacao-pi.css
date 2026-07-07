@@ -1,0 +1,373 @@
+/* ==================== CONFIGURAÇÃO PADRÃO ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==================== TOP BAR ACESSIBILIDADE ==================== */
+.top-accessibility {
+    background-color: #d1e3f0;
+    font-size: 11px;
+    padding: 6px 0;
+    border-bottom: 1px solid #b6cedf;
+}
+
+.container-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.top-accessibility a {
+    text-decoration: none;
+    color: #444;
+}
+
+/* ==================== HEADER PRINCIPAL ==================== */
+.main-header {
+    background-color: #eef5fa;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #004587;
+    margin-right: 40px;
+    border-right: 2px solid #ccc;
+    padding-right: 20px;
+}
+
+.logo-orange {
+    color: #f39200;
+    margin-right: 5px;
+    transform: rotate(30deg);
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    max-width: 700px;
+}
+
+.search-icon {
+    color: #333;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.orange-bar {
+    height: 15px;
+    background-color: #f39200;
+}
+
+/* ==================== BREADCRUMB CUSTOMIZADO ==================== */
+.breadcrumb {
+    background-color: #004587;
+    color: #fff;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: #b0cbe3;
+    text-decoration: none;
+}
+
+.breadcrumb .active-crumb {
+    font-weight: bold;
+}
+
+/* ==================== AREA CENTRAL DO CONTEÚDO ==================== */
+.main-content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.form-container-pi {
+    background-color: #fff;
+    border: 1px solid #b6cedf;
+    border-radius: 4px;
+    padding: 30px;
+}
+
+.pi-layout-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+/* Coluna esquerda com a Ilustração */
+.illustration-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration-side h2 {
+    font-size: 38px;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 25px;
+    align-self: flex-start;
+}
+
+.pi-circle-illustration {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #f4f7f9 40%, #e0edf7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #a4c2db;
+}
+
+.pi-inner-badge {
+    width: 110px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 69, 135, 0.15);
+}
+
+.pi-inner-badge span {
+    font-size: 38px;
+    font-weight: bold;
+    color: #004587;
+    letter-spacing: 1px;
+}
+
+/* Coluna direita com os Inputs */
+.fields-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.input-block label {
+    font-size: 15px;
+    color: #000;
+}
+
+.input-block input, .input-block textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004587;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-block textarea {
+    resize: vertical;
+}
+
+/* Flexbox Inferior da Criação de PI */
+.form-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.upload-controls-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.action-row-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Previews Redondos de Membros */
+.avatar-previews {
+    display: flex;
+    gap: 12px;
+}
+
+.mini-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+}
+
+/* Previews de Arquivos de Documentos */
+.doc-previews {
+    display: flex;
+    gap: 12px;
+}
+
+.mini-doc {
+    width: 50px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-doc i {
+    font-size: 48px;
+    color: #888888;
+}
+
+/* Botões brancos "+ Adicionar" contornados */
+.btn-add-action {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #004587;
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.btn-add-action:hover {
+    background-color: #eef5fa;
+}
+
+/* ==================== CAIXA DE BUSCA DOS PROFESSORES ==================== */
+.advisor-search-box {
+    width: 300px;
+    border: 1px solid #004587;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor-search-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #004587;
+    gap: 8px;
+}
+
+.advisor-search-header i {
+    color: #333;
+    font-size: 16px;
+}
+
+.advisor-search-header input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+}
+
+.advisor-list-results {
+    max-height: 140px;
+    overflow-y: auto;
+    padding: 5px 0;
+}
+
+.advisor-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #555;
+}
+
+.advisor-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #c4c4c4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ==================== BOTÃO PRINCIPAL DE ENVIO ==================== */
+.submit-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-submit-project {
+    background-color: #004587;
+    color: white;
+    border: none;
+    padding: 10px 45px;
+    font-size: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-submit-project:hover {
+    background-color: #003366;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .form-footer-flex { flex-direction: column; }
+    .advisor-search-box { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .pi-layout-grid { grid-template-columns: 1fr; }
+    .action-row-group { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

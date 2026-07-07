@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Projetos</title>
+    <!-- Biblioteca oficial de ícones (Bootstrap Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Arquivo de estilos da página -->
+    <link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+
+    <!-- ==================== TOPO DE ACESSIBILIDADE ==================== -->
+    <div class="top-accessibility">
+        <div class="container-top">
+            <div class="links-left">
+                <a href="#">Ir para o conteúdo 1</a> | 
+                <a href="#">Ir para o menu 2</a> | 
+                <a href="#">Ir para a busca 3</a> | 
+                <a href="#">Ir para o rodapé</a>
+            </div>
+            <div class="links-right">
+                <a href="#">Acessibilidade</a>
+                <a href="#">Mapa do Site</a>
+                <a href="#">Lei Geral de Proteção de Dados</a> |
+                <a href="#">Termos e serviços</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER DO PORTAL ==================== -->
+    <header class="main-header">
+        <div class="header-container">
+            
+            <!-- Logotipo Senac -->
+            <div class="logo-area">
+                <span class="logo-orange">▲</span>
+                <span class="logo-text">Senac</span>
+            </div>
+            
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" placeholder="Buscar no portal">
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Linha Laranja Horizontal Decorativa -->
+    <div class="orange-bar"></div>
+
+    <!-- ==================== BREADCRUMB (NAVEGAÇÃO) ==================== -->
+    <nav class="breadcrumb">
+        <div class="container">
+            Você está em: <a href="repositorio.html">PI</a> / <a href="repositorio.html">Ensino</a> / <span>Projetos</span>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL (GRID) ==================== -->
+    <main class="main-content container">
+        
+        <!-- SIDEBAR ESQUERDA (Menu + Perfil) -->
+        <aside class="sidebar-container">
+            
+            <div class="sidebar-box">
+                <ul class="menu-list">
+                    <li>Cursos <i class="bi bi-chevron-down arrow"></i></li>
+                    
+                    <!-- Item Ativo nesta página -->
+                    <li class="active-item">Projetos <i class="bi bi-chevron-down arrow"></i></li>
+                    
+                    <li>Documentos <i class="bi bi-chevron-down arrow"></i></li>
+                    <li>Localização <i class="bi bi-chevron-down arrow"></i></li>
+                    
+                    <!-- CONEXÃO LÓGICA: Direciona para a tela de Diferencial/Contatos -->
+                    <li><a href="contatos.html" class="menu-link">Diferencial <i class="bi bi-chevron-down arrow"></i></a></li>
+                    
+                    <!-- CONEXÃO LÓGICA: Direciona para a tela de Relatos -->
+                    <li><a href="relatos.html" class="menu-link">Relatos <i class="bi bi-chevron-down arrow"></i></a></li>
+                </ul>
+                
+                <!-- Código QR -->
+                <div class="qrcode-container">
+                    <div class="mock-qrcode">
+                        <div class="qr-block"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Independente: Editar Perfil -->
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <a href="#" class="btn-edit-profile">Editar Perfil</a>
+            </div>
+
+        </aside>
+
+        <!-- SEÇÃO DE CONTEÚDO (DIREITA) - DETALHES DO PROJETO -->
+        <section class="content-section">
+            <h2>Projetos</h2>
+            
+            <div class="project-box">
+                <div class="project-header-info">
+                    
+                    <!-- Ilustração Circular do PI à esquerda -->
+                    <div class="pi-illustration-left">
+                        <div class="pi-circle-logo">
+                            <span>PI</span>
+                        </div>
+                    </div>
+
+                    <!-- Informações textuais do Projeto -->
+                    <div class="project-details">
+                        <h3>Portal de P.I.</h3>
+                        
+                        <p><strong>Resumo do Projeto:</strong> O Projeto Integradores do trabalho começou a trilhar de diversos Integradores voltada para o armazenamento, catalogação e institucionaldo documento em projetos melhoos, organizarr e melhoare stralamas para compara o resenvolvimento do projeto do projeto.</p>
+                        
+                        <p><strong>Curso:</strong> (ADS) Análise e Desenvolvimento de Sistemas</p>
+                        
+                        <p><strong>Semestre:</strong> 6º Semestre / 2024</p>
+                        
+                        <p><strong>Professor Orientador:</strong> Professor Orientador</p>
+                        
+                        <p><strong>Membros da Equipe:</strong> Membro A: Projeto 1, Membro da Equipe 2, Membro Skovinna</p>
+                    </div>
+
+                </div>
+
+                <!-- Botão de Download Centralizado -->
+                <div class="download-container">
+                    <a href="#" class="btn-download">Baixar Arquivos do Projeto (PDF / Arquivos)</a>
+                </div>
+
+                <!-- CONEXÃO LÓGICA: Link para a tela de contatos -->
+                <div class="request-contacts-wrapper">
+                    <a href="contatos.html" class="link-solicitar-contatos">Solicitar contatos</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

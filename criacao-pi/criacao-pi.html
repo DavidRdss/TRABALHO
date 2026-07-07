@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Criação de PI</title>
+    <!-- Biblioteca oficial de ícones (Bootstrap Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Arquivo de estilos da página -->
+    <link rel="stylesheet" href="criacao-pi.css">
+</head>
+<body>
+
+    <!-- ==================== TOPO DE ACESSIBILIDADE ==================== -->
+    <div class="top-accessibility">
+        <div class="container-top">
+            <div class="links-left">
+                <a href="#">Ir para o conteúdo 1</a> | 
+                <a href="#">Ir para o menu 2</a> | 
+                <a href="#">Ir para a busca 3</a> | 
+                <a href="#">Ir para o rodapé</a>
+            </div>
+            <div class="links-right">
+                <a href="#">Acessibilidade</a>
+                <a href="#">Mapa do Site</a>
+                <a href="#">Lei Geral de Proteção de Dados</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HEADER DO PORTAL ==================== -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logotipo Senac -->
+            <div class="logo-area">
+                <span class="logo-orange">▲</span>
+                <span class="logo-text">Senac</span>
+            </div>
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" placeholder="Buscar no portal">
+            </div>
+        </div>
+    </header>
+
+    <!-- Linha Laranja Horizontal Decorativa -->
+    <div class="orange-bar"></div>
+
+    <!-- ==================== BREADCRUMB PERSONALIZADO ==================== -->
+    <nav class="breadcrumb">
+        <div class="container">
+            Você está em: <a href="repositorio.html">Pi</a> / <a href="editar-perfil.html">Perfil</a> / <a href="editar-perfil.html">Editar</a> / <span class="active-crumb">Criação de Pi</span>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main class="main-content container">
+        <section class="content-section form-container-pi">
+            
+            <!-- Linha que divide a Ilustração do Formulário -->
+            <div class="pi-layout-grid">
+                
+                <!-- Coluna da Esquerda: Título + Ilustração PI -->
+                <div class="illustration-side">
+                    <h2>Criação de PI</h2>
+                    <div class="pi-circle-illustration">
+                        <div class="pi-inner-badge">
+                            <span>PI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Campos do Formulário -->
+                <div class="fields-side">
+                    <form class="pi-project-form">
+                        
+                        <!-- Campo 1: Título -->
+                        <div class="input-block">
+                            <label for="titulo">titulo do projeto</label>
+                            <input type="text" id="titulo">
+                        </div>
+
+                        <!-- Campo 2: Resumo -->
+                        <div class="input-block">
+                            <label for="resumo">Resumo do projeto</label>
+                            <textarea id="resumo" rows="4"></textarea>
+                        </div>
+
+                        <!-- Zona Inferior Dividida: Uploads à Esquerda, Orientadores à Direita -->
+                        <div class="form-footer-flex">
+                            
+                            <!-- Lado Esquerdo da parte de baixo: Uploads/Add de Membros e Documentos -->
+                            <div class="upload-controls-column">
+                                
+                                <!-- Bloco Adicionar Membros -->
+                                <div class="action-row-group">
+                                    <div class="avatar-previews">
+                                        <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <div class="mini-avatar"><i class="bi bi-person-fill"></i></div>
+                                    </div>
+                                    <button type="button" class="btn-add-action">+ Adicionar membros</button>
+                                </div>
+
+                                <!-- Bloco Adicionar Documentos -->
+                                <div class="action-row-group">
+                                    <div class="doc-previews">
+                                        <div class="mini-doc"><i class="bi bi-file-earmark-text-fill"></i></div>
+                                        <div class="mini-doc"><i class="bi bi-file-earmark-text-fill"></i></div>
+                                        <div class="mini-doc"><i class="bi bi-file-earmark-text-fill"></i></div>
+                                    </div>
+                                    <button type="button" class="btn-add-action">+ Adicionar documentos</button>
+                                </div>
+
+                            </div>
+
+                            <!-- Lado Direito da parte de baixo: Caixa do Professor Orientador -->
+                            <div class="advisor-search-box">
+                                <div class="advisor-search-header">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" placeholder="Buscar professor orientador...">
+                                </div>
+                                <div class="advisor-list-results">
+                                    <div class="advisor-item">
+                                        <div class="advisor-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <span>professor orientador</span>
+                                    </div>
+                                    <div class="advisor-item">
+                                        <div class="advisor-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <span>professor orientador</span>
+                                    </div>
+                                    <div class="advisor-item">
+                                        <div class="advisor-avatar"><i class="bi bi-person-fill"></i></div>
+                                        <span>professor orientador</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Botão de Ação Final Centralizado -->
+                        <div class="submit-area">
+                            <button type="submit" class="btn-submit-project">Finalizar e enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
