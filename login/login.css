@@ -1,4 +1,3 @@
-/* ==================== CONFIGURAÇÃO BASE ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +6,16 @@
 }
 
 body {
-    background-color: #f4f7f9;
-    color: #333;
+    background-color: #f7f4ef;
+    color: #29231f;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* ==================== BARRA DO TOPO (HEADER) ==================== */
 .main-header {
-    background-color: #eef5fa;
-    padding: 15px 0;
-    border-bottom: 1px solid #d1e3f0;
+    background-color: #211e1b;
+    padding: 17px 0;
 }
 
 .header-container {
@@ -27,23 +24,23 @@ body {
     display: flex;
     align-items: center;
     padding: 0 20px;
+    gap: 34px;
 }
 
 .logo-area {
     display: flex;
     align-items: center;
-    font-size: 32px;
-    font-weight: bold;
-    color: #004587;
-    margin-right: 40px;
-    border-right: 2px solid #ccc;
-    padding-right: 20px;
+    font-size: 27px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .logo-orange {
-    color: #f39200;
-    margin-right: 5px;
-    transform: rotate(30deg);
+    color: #e18a45;
+    margin-right: 9px;
+    font-size: 28px;
 }
 
 .search-bar {
@@ -51,15 +48,14 @@ body {
     display: flex;
     align-items: center;
     background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px 12px;
+    border: 1px solid #ded7cf;
+    border-radius: 5px;
+    padding: 10px 13px;
     max-width: 700px;
 }
 
-/* Customização do ícone de lupa puxado do link */
 .search-icon {
-    color: #333;
+    color: #786b60;
     font-size: 16px;
     margin-right: 10px;
 }
@@ -68,42 +64,41 @@ body {
     border: none;
     outline: none;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .orange-bar {
-    height: 15px;
-    background-color: #f39200;
+    height: 7px;
+    background-color: #d87939;
 }
 
-/* ==================== BOX DO CARD (MÓDULO CENTRAL) ==================== */
 .page-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 48px 20px;
 }
 
 .login-card {
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
-    max-width: 850px;
-    border: 1px solid #b6cedf;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    border: 1px solid #e2d9cf;
+    border-radius: 9px;
+    box-shadow: 0 12px 36px rgba(42, 31, 22, 0.08);
     overflow: hidden;
 }
 
 .card-breadcrumb {
-    background-color: #004587;
+    background-color: #302821;
     color: #fff;
-    padding: 10px 20px;
+    padding: 13px 24px;
     font-size: 13px;
 }
 
 .card-breadcrumb span {
-    color: #b0cbe3;
+    color: #e8c7a8;
 }
 
 .card-breadcrumb span.active {
@@ -113,171 +108,213 @@ body {
 
 .card-body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 40px;
-    gap: 20px;
+    grid-template-columns: 0.9fr 1.1fr;
+    padding: 46px;
+    gap: 35px;
 }
 
-/* ==================== ÁREA DA ESQUERDA (IMAGEM/QR) ==================== */
 .column-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
 .pi-illustration-wrapper {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background: radial-gradient(circle, #f4f7f9 40%, #e0edf7 100%);
+    background: radial-gradient(circle, #fff 35%, #f0dfce 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px dashed #a4c2db;
+    border: 1px dashed #d9ad85;
 }
 
 .pi-circle-logo {
-    width: 110px;
-    height: 110px;
-    background-color: #ffffff;
+    width: 116px;
+    height: 116px;
+    background-color: #302821;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 69, 135, 0.15);
+    box-shadow: 0 7px 20px rgba(48, 40, 33, 0.2);
 }
 
 .pi-circle-logo span {
     font-size: 38px;
-    font-weight: bold;
-    color: #004587;
+    font-weight: 800;
+    color: #e18a45;
     letter-spacing: 1px;
 }
 
 .app-access {
-    align-self: flex-end;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 11px;
-    color: #555;
-    margin-top: 20px;
+    max-width: 260px;
+    margin-top: 24px;
+    color: #5b5047;
+    line-height: 1.6;
 }
 
-.mock-qr-code {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #999;
-    padding: 3px;
-    background-color: #fff;
-    margin-top: 5px;
+.app-access strong {
+    display: block;
+    color: #302821;
+    margin-bottom: 4px;
 }
 
-.qr-pattern {
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(45deg, #333, #333 4px, #fff 4px, #fff 8px);
+.app-access p {
+    font-size: 13px;
 }
 
-/* ==================== ÁREA DA DIREITA (INPUTS / LINKS) ==================== */
 .column-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px;
 }
 
 .column-right h2 {
     text-align: center;
-    font-size: 32px;
-    color: #333;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #302821;
     font-weight: normal;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
+}
+
+.login-description {
+    color: #776b61;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto 26px;
+    max-width: 330px;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+}
+
+.input-group label {
+    display: block;
+    color: #51463d;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
 }
 
 .input-group input {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #999;
-    border-radius: 4px;
+    padding: 13px 14px;
+    border: 1px solid #d8cec4;
+    border-radius: 5px;
     font-size: 15px;
     outline: none;
+    background: #fffdfa;
+}
+
+.input-group input:focus {
+    border-color: #d87939;
+    box-shadow: 0 0 0 3px rgba(216, 121, 57, 0.13);
 }
 
 .form-options {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
-    margin-bottom: 25px;
+    font-size: 12px;
+    margin: 3px 0 20px;
 }
 
-.remember-me {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
+.demo-note {
+    color: #786b60;
 }
 
-.forgot-password {
-    color: #004587;
-    text-decoration: none;
+.demo-note i {
+    color: #d87939;
+    margin-right: 4px;
 }
 
-/* Link estilizado como o grande botão azul de Login */
 .btn-submit-link {
     display: block;
     width: 100%;
-    background-color: #004587;
-    color: white;
+    background-color: #c96f34;
+    color: #fff;
     border: none;
-    padding: 12px;
-    font-size: 24px;
-    border-radius: 4px;
+    padding: 13px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
     text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
 .btn-submit-link:hover {
-    background-color: #003366;
+    background-color: #a95325;
+    transform: translateY(-1px);
+}
+
+.btn-submit-link:focus-visible {
+    outline: 3px solid #302821;
+    outline-offset: 3px;
 }
 
 .card-footer-text {
     text-align: center;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 19px;
+    color: #776b61;
+    font-size: 13px;
 }
 
-.card-footer-text a {
-    color: #004587;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card-footer-text a:hover {
-    text-decoration: underline;
-}
-
-/* ==================== LINHA DE RODAPÉ ==================== */
 .page-footer {
     text-align: center;
     font-size: 12px;
-    color: #555;
-    padding: 15px 0;
-    border-top: 1px solid #ccc;
+    color: #786b60;
+    padding: 17px 12px;
+    border-top: 1px solid #e6ddd4;
     background-color: #fff;
 }
 
-/* AJUSTES DE TELA PARA DISPOSITIVOS MÓVEIS */
-@media (max-width: 768px) {
-    .card-body { grid-template-columns: 1fr; padding: 20px; }
-    .column-left { margin-bottom: 30px; }
-    .app-access { align-self: center; }
-    .column-right { padding-left: 0; }
+@media (max-width: 700px) {
+    .header-container {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .logo-area {
+        font-size: 23px;
+    }
+
+    .search-bar {
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .page-container {
+        padding: 28px 14px;
+    }
+
+    .card-body {
+        grid-template-columns: 1fr;
+        padding: 28px 22px;
+        gap: 28px;
+    }
+
+    .pi-illustration-wrapper {
+        width: 170px;
+        height: 170px;
+    }
+
+    .pi-circle-logo {
+        width: 92px;
+        height: 92px;
+    }
+
+    .pi-circle-logo span {
+        font-size: 31px;
+    }
+
+    .column-right h2 {
+        font-size: 29px;
+    }
 }
