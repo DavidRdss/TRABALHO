@@ -3,92 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senac - Login</title>
+    <meta name="theme-color" content="#211e1b">
+    <title>Barbearia | Entrar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
     <header class="main-header">
         <div class="header-container">
-            
-            <div class="logo-area">
-                <span class="logo-orange">▲</span>
-                <span class="logo-text">Senac</span>
-            </div>
-            
+            <a class="logo-area" href="../barbearia/index.html" aria-label="Barbearia, página inicial">
+                <span class="logo-orange">✦</span>
+                <span class="logo-text">Barbearia</span>
+            </a>
             <div class="search-bar">
-                <i class="bi bi-search search-icon"></i>
-                <input type="text" placeholder="Buscar no portal">
+                <i class="bi bi-search search-icon" aria-hidden="true"></i>
+                <input type="search" placeholder="Buscar serviços" aria-label="Buscar serviços">
             </div>
-
         </div>
     </header>
 
     <div class="orange-bar"></div>
 
-
     <main class="page-container">
-        
-        <div class="login-card">
-            
+        <section class="login-card" aria-labelledby="login-title">
             <div class="card-breadcrumb">
-                Você está em: <span>Acesso</span> &gt; <span class="active">Login</span>
+                Você está em: <span>Área do cliente</span> &gt; <span class="active">Login</span>
             </div>
 
             <div class="card-body">
-                
                 <div class="column-left">
-                    <div class="pi-illustration-wrapper">
-                        <div class="pi-circle-logo">
-                            <span>PI</span>
-                        </div>
+                    <div class="pi-illustration-wrapper" aria-hidden="true">
+                        <div class="pi-circle-logo"><span>BN</span></div>
                     </div>
-                    
                     <div class="app-access">
-                        <span>Acesso via App</span>
-                        <div class="mock-qr-code">
-                            <div class="qr-pattern"></div>
-                        </div>
+                        <strong>Seu estilo começa aqui.</strong>
+                        <p>Entre para conhecer os serviços da nossa barbearia.</p>
                     </div>
                 </div>
 
                 <div class="column-right">
-                    <h2>Login</h2>
-                    
-                    <form class="login-form">
+                    <h2 id="login-title">Bem-vindo!</h2>
+                    <p class="login-description">Informe seus dados para acessar a página da barbearia.</p>
+
+                    <form class="login-form" id="loginForm">
                         <div class="input-group">
-                            <input type="text" placeholder="Email Institucional / CPF" required>
+                            <label for="login">Email ou CPF</label>
+                            <input id="login" name="login" type="text" placeholder="Digite seu email ou CPF" autocomplete="username" required>
                         </div>
-                        
+
                         <div class="input-group">
-                            <input type="password" placeholder="Senha" required>
+                            <label for="password">Senha</label>
+                            <input id="password" name="password" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
                         </div>
 
                         <div class="form-options">
-                            <label class="remember-me">
-                                <input type="checkbox"> Lembrar de mim
-                            </label>
-                            <a href="#" class="forgot-password">Esqueci minha senha?</a>
+                            <span class="demo-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Acesso demonstrativo</span>
                         </div>
 
-                        <a href="repositorio.html" class="btn-submit-link">Acessar</a>
+                        <button type="submit" class="btn-submit-link">Entrar</button>
                     </form>
 
-                    <div class="card-footer-text">
-                        não tem uma conta? <a href="cadastro.html">crie aqui</a>
-                    </div>
+                    <p class="card-footer-text">Preencha os dois campos para continuar.</p>
                 </div>
-
             </div>
-        </div>
-
+        </section>
     </main>
 
-
     <footer class="page-footer">
-        SENAC - Institutório de Projetos Integradores
+        BARBEARIA · Estilo e cuidado em cada detalhe.
     </footer>
 
+    <script>
+        const loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            if (!loginForm.reportValidity()) {
+                return;
+            }
+
+            // A atividade usa um acesso demonstrativo, sem autenticação por servidor.
+            // Nenhuma senha é armazenada ou enviada.
+            sessionStorage.setItem("barbearia-demo-access", "1");
+            window.location.href = "../barbearia/index.html";
+        });
+    </script>
 </body>
 </html>
